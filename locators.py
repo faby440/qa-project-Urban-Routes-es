@@ -1,5 +1,4 @@
 from selenium.webdriver.common.by import By
-import data
 
 class UrbanRoutesPage:
 
@@ -19,6 +18,7 @@ class UrbanRoutesPage:
     botton_to_add = (By.XPATH, "//button[normalize-space()='Agregar']")
     close_button = (By.XPATH, "//div[@class='payment-picker open']//div[@class='section active']//button[@class='close-button section-close']")
     message_for_driver_field = (By.ID, "comment")
+    requisitos_del_pedido_button = (By.CLASS_NAME, "reqs-head")
     selecction_blanket = (By.XPATH, "//div[@class='workflow']//div[1]//div[1]//div[2]//div[1]//span[1]")
     selecction_ice = (By.XPATH, "//div[@class='r-group']//div[1]//div[1]//div[2]//div[1]//div[1]")
     smart_button_main = (By.CLASS_NAME, "smart-button-secondary")
