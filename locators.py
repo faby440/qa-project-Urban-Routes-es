@@ -4,9 +4,9 @@ class UrbanRoutesPage:
 
     from_field = (By.ID, "from")
     to_field = (By.ID, "to")
-    taxi_button_round = (By.CLASS_NAME, ".button_round")
-    confort_tcard_active = (By.ID, "tariff-card-4")
-    button_phone = (By.CLASS_NAME, "np_text")
+    taxi_button_round = (By.CLASS_NAME, '.button_round')
+    confort_active = (By.ID, "tariff-card-4")
+    button_phone = (By.CLASS_NAME, "np-button")
     number_field = (By.ID, "phone")
     selection_button_next = (By.CSS_SELECTOR, ".div[class='section active'] button[type='submit']")
     code_field = (By.XPATH, "//div[@class='input-container error']//input[@id='code']")
