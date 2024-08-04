@@ -183,7 +183,7 @@ class UrbanRoutesPage:
 
 #Aparece modal para pedir taxi
     def wait_for_load_smart_button(self):
-        WebDriverWait(self.driver, 20).until(expected_conditions.element_to_be_clickable(locators.UrbanRoutesPage.smart_button_main))
+        WebDriverWait(self.driver, 30).until(expected_conditions.element_to_be_clickable(locators.UrbanRoutesPage.smart_button_main))
     def check_smart_button_is_enabled(self):
         return self.driver.find_element(*locators.UrbanRoutesPage.smart_button_main).is_enabled()
     def click_smart_button(self):

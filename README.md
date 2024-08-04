@@ -41,7 +41,6 @@ En esta prueba AUTOMATIZADA utilizamos el metodo POM
 - `Se crea una clase`: para el inicio de sesion la llamamos
    class UrbanRoutesPage:
 
-
 - `Paso 5`:
 Especificamos controlador a utilizar
 
@@ -63,7 +62,7 @@ Utilizamos estas dos condiciones
 #element_to_be_clickable: se puede hacer clic en el elemento.
 #presence_of_element_located: el elemento está presente en la página.
 
-- `Paso 8`:
+- `Paso 7`:
 Para rrellenar campo de entrada utilizamos el siguiente metodo 
 
 def set_from(self, from_address):
@@ -92,9 +91,9 @@ def set_route(self, from_address, to_address):
     self.set_to(data.to_address)
 
 - `TEST`
+- Comando utilizados para la prueba pytest: main.py
 - `Se crea una clase`: para los test
    class TestUrbanRoutes:
-
 
 - `Para declarar el metodo`:se coloco antes @classmethod que es un 
 decorador que permite ampliar la funcionalidad de los metodos o funciones

@@ -21,7 +21,6 @@ class TestUrbanRoutes:
         cls.driver = webdriver.Chrome()
         cls.driver.get(data.urban_routes_url)
         cls.driver.maximize_window()
-
     def test_set_route(self):
         routes_page = UrbanRoutesPage(self.driver)
         from_address = data.from_address
@@ -29,7 +28,6 @@ class TestUrbanRoutes:
         routes_page.set_route(from_address, to_address)
         assert routes_page.get_from() == from_address
         assert routes_page.get_to() == to_address
-
 #Prueba 2 seleccion opcion confort
     def test_click_buttons(self):
         routes_page = UrbanRoutesPage(self.driver)
@@ -79,7 +77,6 @@ class TestUrbanRoutes:
         routes_page = UrbanRoutesPage(self.driver)
         routes_page.click_selecction_blanket()
         assert routes_page.check_selecction_blanket_is_enable()
-
 #Prueba 7 comprobar si se agregaron los dos helados
     def test_selecction_ice(self):
         routes_page = UrbanRoutesPage(self.driver)
@@ -92,8 +89,6 @@ class TestUrbanRoutes:
         routes_page = UrbanRoutesPage(self.driver)
         routes_page.click_smart_button()
         assert routes_page.check_smart_button_is_enabled()
-
-
     @classmethod
     def teardown_class(cls):
         # Cerrar el navegador
